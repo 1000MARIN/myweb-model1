@@ -37,6 +37,11 @@ System.out.println(memberVO); // 서버 콘솔 출력
 <%-- 회원가입 insert 처리하기 --%> 
 <% memberDAO.insert(memberVO); %>
 
+
+<!-- 리다이렉트 처리 방법 1 -->
+<% //response.sendRedirect("/member/login.jsp") %>
+
+<!-- 리다이렉트 처리 방법 2 -->
 <script>
 	alert('회원가입 성공');
 	location.href = '/member/login.jsp'; // 로그인 화면 요청
